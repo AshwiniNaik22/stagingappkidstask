@@ -1,0 +1,29 @@
+Key Milestones in Create Playlist Journey
+
+1. Login successfully
+
+     User enters valid credentials.
+
+     User is redirected to /playlists.
+
+2. Navigate to Playlist creation
+
+     Click on Create Playlist button (SVG + span).
+
+     Playlist creation modal/page opens.
+
+3. Fill Playlist details
+
+     Enter name (e.g., "My Test Playlist").
+
+     Enter description.
+
+    Save playlist.
+
+4. Verify Playlist creation
+
+     Success alert appears.
+
+    Redirects to playlist detail page.
+
+    Playlist title and description visible.
