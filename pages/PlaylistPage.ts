@@ -57,9 +57,7 @@ export class PlaylistPage extends BasePage {
 
 
   async assertPlaylistExists(name: string) {
-    await expect(
-      this.page.locator('div.MuiTypography-h3', { hasText: name })
-    ).toBeVisible();
+    await expect(this.page.locator('div.MuiTypography-h3', { hasText: name })).toBeVisible();
   }
 
 //   async editTitle(newTitle: string) {

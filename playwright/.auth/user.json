@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "a1131208bb3c921b4134bd035adfe309f21584399723610ac894285958f07818%7C270013c54d5c1fc11ce716e5cb4f24312677674e0d1218380ad2019a8784a7b4",
+      "value": "373c36e1cb21114534430fc7df4f63a8a229bb4784573bef324ac64aee267970%7C6e25e4b57634a50ac78c1847c40d3e930a71839e7fb25b7c3db187a23f20fa01",
       "domain": "staging.amazingkids.app",
       "path": "/",
       "expires": -1,
@@ -22,10 +22,10 @@
     },
     {
       "name": "__Secure-next-auth.session-token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZDA3MjdlYy1mNmM2LTRkYmYtODQ3ZS1iODA1YzA3N2MwY2EiLCJvcmdJZCI6IjY2ZmRiZDRiLTliMjktNDkxZC05NmI0LWE0OWI3NjhiZjQzZCIsImVtYWlsIjoicWEucmVzb3VyY2UxQHlvcG1haWwuY29tIiwiZmlyc3ROYW1lIjoicWEiLCJsYXN0TmFtZSI6InJlc291cmNlMSIsImlzUm9vdE9yZ1VzZXIiOmZhbHNlLCJ1c2VyUm9sZXMiOlsib3JnLWFkbWluIl0sImlhdCI6MTc1NzM0MDI3OCwiZXhwIjoxNzU3NDI2Njc4fQ.ZNbMxwT9FDv89JppOESoLOTo0JKc_UJyMMTf6yO2lu8",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZDA3MjdlYy1mNmM2LTRkYmYtODQ3ZS1iODA1YzA3N2MwY2EiLCJvcmdJZCI6IjY2ZmRiZDRiLTliMjktNDkxZC05NmI0LWE0OWI3NjhiZjQzZCIsImVtYWlsIjoicWEucmVzb3VyY2UxQHlvcG1haWwuY29tIiwiZmlyc3ROYW1lIjoicWEiLCJsYXN0TmFtZSI6InJlc291cmNlMSIsImlzUm9vdE9yZ1VzZXIiOmZhbHNlLCJ1c2VyUm9sZXMiOlsib3JnLWFkbWluIl0sImlhdCI6MTc1NzM0OTMxNywiZXhwIjoxNzU3NDM1NzE3fQ.Ph8gujXNrRtvyO6gJI9JkvG8nmI_Jxcgrda37ue0mCI",
       "domain": "staging.amazingkids.app",
       "path": "/",
-      "expires": 1759932280.499447,
+      "expires": 1759941318.628776,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -37,7 +37,7 @@
       "localStorage": [
         {
           "name": "ld:67e3aa2621ad640ae500d864:$diagnostics",
-          "value": "{\"dataSinceDate\":1757340276958,\"droppedEvents\":0,\"eventsInLastBatch\":0,\"streamInits\":[]}"
+          "value": "{\"dataSinceDate\":1757349315125,\"droppedEvents\":0,\"eventsInLastBatch\":0,\"streamInits\":[]}"
         },
         {
           "name": "ably-transport-preference",
