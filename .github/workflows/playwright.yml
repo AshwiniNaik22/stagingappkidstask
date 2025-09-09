@@ -1,27 +1,47 @@
 name: Playwright Tests
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+
+on: [push, pull_request]
+
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      TEST_USER_EMAIL: qa.resource1@yopmail.com
+      TEST_USER_PASSWORD: Test@123
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: lts/*
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm ci
+      - run: npx playwright install --with-deps
+
+      # 1. Run auth setup
+      - name: Run auth setup
+        run: npx playwright test --project=setup
+
+      # 2. Save .auth folder as artifact so it's available in next steps
+      - name: Upload auth state
+        uses: actions/upload-artifact@v4
+        with:
+          name: auth
+          path: .auth
+
+      # 3. Run e2e tests (after restoring auth state)
+      - name: Download auth state
+        uses: actions/download-artifact@v4
+        with:
+          name: auth
+          path: .auth
+
+      - name: Run E2E tests
+        run: npx playwright test --project=e2e
+
+      # 4. Upload report if failure
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report
