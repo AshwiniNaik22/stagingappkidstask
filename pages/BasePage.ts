@@ -1,21 +1,4 @@
-// import { Page, expect } from '@playwright/test';
 
-// export class BasePage {
-//   constructor(protected readonly page: Page) {}
-
-//   async goto(path: string) {
-//     await this.page.goto(path);
-//   }
-
-//   async clickButtonByName(name: string) {
-//     await this.page.getByRole('button', { name }).click();
-//   }
-
-//   async expectTextVisible(text: string, context: string = 'main') {
-//     const locator = this.page.locator(context).getByText(text, { exact: true }).first();
-//     await expect(locator).toBeVisible();
-//   }
-// }
 import { Page, expect } from '@playwright/test';
 
 export class BasePage {

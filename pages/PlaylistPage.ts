@@ -1,29 +1,3 @@
-// import { Page, expect } from '@playwright/test';
-// import { BasePage } from '../pages/BasePage';
-
-// export class PlaylistPage extends BasePage {
-//   constructor(page: Page) {
-//     super(page);
-//   }
-
-//   async open() {
-//     await this.page.goto('/playlists');
-//   }
-
-//   async createPlaylist(title: string, description: string) {
-//     await this.clickButtonByName('Create Playlist');
-//     await this.page.getByLabel('Title').fill(title);
-//     await this.page.getByLabel('Description').fill(description);
-//     await this.page.getByRole('button', { name: 'Save' }).click();
-//     await this.page.locator('.spinner').waitFor({ state: 'detached' });
-//   }
-
-//   async assertPlaylistExists(title: string) {
-//     await expect(this.page.getByRole('heading', { name: title })).toBeVisible();
-//   }
-// }
-
-
 import { Page, expect } from '@playwright/test';
 import { BasePage } from './BasePage';
 
@@ -60,10 +34,4 @@ export class PlaylistPage extends BasePage {
     await expect(this.page.locator('div.MuiTypography-h3', { hasText: name })).toBeVisible();
   }
 
-//   async editTitle(newTitle: string) {
-//     await this.page.getByRole('button', { name: 'Edit Title' }).click();
-//     await this.page.getByRole('textbox').fill(newTitle);
-//     await this.page.keyboard.press('Enter');
-//     await expect(this.page.getByText(newTitle, { exact: true })).toBeVisible();
-//   }
 }
