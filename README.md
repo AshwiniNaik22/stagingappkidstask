@@ -18,6 +18,18 @@ It follows **Page Object Model (POM)**, ensures **stable tests** with robust loc
 
 --
 
+# Post code checkout follow below steps
+
+**execute below commands in command prompt**
+
+node --version
+
+npm install
+
+npm install dotenv
+
+npx playwright install
+
 # Running Tests
 
 **Run all tests:**
