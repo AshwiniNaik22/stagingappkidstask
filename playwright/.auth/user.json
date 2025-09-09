@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "55cbfb03525d5ba778bd965a2c59908b7796fdcd49c23d295211cc0432a12de5%7C22724f83d07600a5a80acfa3c833d15bec4d049b0f849cac1209a988f28f956a",
+      "value": "a23b7319968135c7f58bb7ebb7ac2cac1ff6ac00e27b73b2d297caa96516a1c4%7Cb6a0517bf5b8c30945df642ed2734845573a768e1628870bb5e6c9f37eba7934",
       "domain": "staging.amazingkids.app",
       "path": "/",
       "expires": -1,
@@ -22,10 +22,10 @@
     },
     {
       "name": "__Secure-next-auth.session-token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZDA3MjdlYy1mNmM2LTRkYmYtODQ3ZS1iODA1YzA3N2MwY2EiLCJvcmdJZCI6IjY2ZmRiZDRiLTliMjktNDkxZC05NmI0LWE0OWI3NjhiZjQzZCIsImVtYWlsIjoicWEucmVzb3VyY2UxQHlvcG1haWwuY29tIiwiZmlyc3ROYW1lIjoicWEiLCJsYXN0TmFtZSI6InJlc291cmNlMSIsImlzUm9vdE9yZ1VzZXIiOmZhbHNlLCJ1c2VyUm9sZXMiOlsib3JnLWFkbWluIl0sImlhdCI6MTc1NzQyMTE3NSwiZXhwIjoxNzU3NTA3NTc1fQ.1mTMWy831le40AO8zqx8AMj0U-4Q-sXGXirtAw7VRSU",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZDA3MjdlYy1mNmM2LTRkYmYtODQ3ZS1iODA1YzA3N2MwY2EiLCJvcmdJZCI6IjY2ZmRiZDRiLTliMjktNDkxZC05NmI0LWE0OWI3NjhiZjQzZCIsImVtYWlsIjoicWEucmVzb3VyY2UxQHlvcG1haWwuY29tIiwiZmlyc3ROYW1lIjoicWEiLCJsYXN0TmFtZSI6InJlc291cmNlMSIsImlzUm9vdE9yZ1VzZXIiOmZhbHNlLCJ1c2VyUm9sZXMiOlsib3JnLWFkbWluIl0sImlhdCI6MTc1NzQyNjk0NiwiZXhwIjoxNzU3NTEzMzQ2fQ.moG8Y8EF46TF-p4TLzUZbCVISzhnguHRt4itW2zDEU4",
       "domain": "staging.amazingkids.app",
       "path": "/",
-      "expires": 1760013176.015745,
+      "expires": 1760018947.47208,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -36,12 +36,12 @@
       "origin": "https://staging.amazingkids.app",
       "localStorage": [
         {
-          "name": "ld:67e3aa2621ad640ae500d864:$diagnostics",
-          "value": "{\"dataSinceDate\":1757421172119,\"droppedEvents\":0,\"eventsInLastBatch\":0,\"streamInits\":[]}"
-        },
-        {
           "name": "ably-transport-preference",
           "value": "{\"value\":\"web_socket\"}"
+        },
+        {
+          "name": "ld:67e3aa2621ad640ae500d864:$diagnostics",
+          "value": "{\"dataSinceDate\":1757426943158,\"droppedEvents\":0,\"eventsInLastBatch\":0,\"streamInits\":[]}"
         },
         {
           "name": "roleOptions",

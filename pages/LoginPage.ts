@@ -23,8 +23,8 @@ export class LoginPage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    this.emailInput = page.getByPlaceholder('Email');
-    this.passwordInput = page.getByPlaceholder('Password');
+   this.emailInput = page.locator('input[name="email"]');
+    this.passwordInput = page.locator('input[name="password"]');
     this.signInButton = page.getByRole('button', { name: /Sign in now/i });
   }
 
