@@ -45,13 +45,13 @@ export default defineConfig({
       name: 'setup',
       testMatch: /.*auth\.setup\.ts/,
     },
-    // {
-    //   name: 'e2e',
-    //   dependencies: ['setup'],   
-    //   use: {
-    //     storageState: 'playwright/.auth/user.json',
-    //   },
-    // },
+    {
+      name: 'e2e',
+      dependencies: ['setup'],   
+      use: {
+        storageState: 'playwright/.auth/user.json',
+      },
+    },
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
