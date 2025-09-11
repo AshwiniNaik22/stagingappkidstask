@@ -25,5 +25,11 @@ Key Milestones in Create Playlist Journey
      Success alert appears.
 
     Redirects to playlist detail page.
+    
+5. Add tracks to the playlist
 
-    Playlist title and description visible.
+     From the Summer library 3 tracks are added
+
+     Save the playlist
+
+     Verify tracks are visible in the playlist.
